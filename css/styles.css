@@ -1,0 +1,25 @@
+.container {
+/*  text-align: center;*/
+  background-color: white;
+  padding: 90px 90px 90px 90px;
+  margin-top: 5vh;
+  margin-right: 5vw;
+  margin-left: 5vw;
+
+}
+
+body {
+  background-color: gray;
+}
+
+#results {
+	display: none;
+  padding: 30px 30px 30px 30px;
+}
+
+#css {
+  font-size: 50px;
+  color: red;
+  font-size: bold;
+}
+

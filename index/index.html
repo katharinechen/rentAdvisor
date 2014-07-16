@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="../css/bootstrap.css" rel="stylesheet" type="text/css"></a>
+	<link href="../css/styles.css" rel="stylesheet" type="text/css"></a>
+	<script src="../js/jquery-1.11.1.js"></script>
+	<script src="../js/scripts.js"></script>
+	<title>Rent Advisor</title>
+</head>
+
+<body>
+	<div class="container">
+		<h1>Rent Advisor</h1>
+		<p>This is an easy and effective way of finding out how much you and your roommate should pay for rent each month.</p>
+		<div class="form-group">
+			<form id="rent-form" class="form-horiztonal" role="form">
+				<fieldset class="col-md-6" >
+					<legend>Rent Information</legend>
+					<label for="total-rent" class="col-sm-4 control-label">Total Rent:</label>
+					<input type="number" id="total-rent" class="col-sm-8" class="form-control" placeholder="Enter the total cost of rent per month"/>
+					</br>
+					<label for="total-roommates" class="col-sm-4 control-label">Number of Roommates:</label>
+					<input type="number" id="total-roommates" class="col-sm-8" class="form-control" placeholder="Enter number of roommates (do not include yourself in this number)"/>
+					</br>
+				</fieldset>
+
+				<fieldset class="col-md-6">
+					<legend>Optional Shared Utilities</legend>
+					<p>If mentioned utility is not part of the rent, please enter the number 0.</p>
+					</br>
+					<label for="electricity" class="col-sm-4 control-label">Electricity: </label>
+					<input type="number" id="electricity"  class="col-sm-8" class="form-control" placeholder="Enter cost of electricity per month" />
+					</br>
+					<label for="internet" class="col-sm-4 control-label">Internet: </label>
+					<input type="number" id="internet"  class="col-sm-8" class="form-control" placeholder="Enter cost of internet per month" />
+					</br>
+					<label for="cable" class="col-sm-4 control-label">Cable: </label>
+					<input type="number" id="cable"  class="col-sm-8" class="form-control"/ placeholder="Enter cost of cable per month" />
+					</br>
+					<label for="phone" class="col-sm-4 control-label">Phone: </label>
+					<input type="number" id="phone"  class="col-sm-8" class="form-control" placeholder="Enter cost of phone per month" />
+					</br>
+					<label for="parking" class="col-sm-4 control-label">Parking: </label>
+					<input type="number" id="parking"  class="col-sm-8" class="form-control" placeholder="Enter cost of parking per month" />
+				</fieldset>
+				</br>
+				<button type="submit" class="btn btn-primary">Submit</button>
+			</form>
+		</div>
+		<div id="results">
+			<div id="result-parta" class="col-md-4">
+				<table class="table table-hover" >
+					<thead>
+						<tr>
+							<th>Utility</th>
+							<th>Cost</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Total Rent</td>
+							<td id="total-rent-td"></td>
+						</tr>
+						<tr>
+							<td>Electricity</td>
+							<td id="electricity-td"></td>
+						</tr>
+						<tr>
+							<td>Internet</td>
+							<td id="internet-td"></td>
+						</tr>
+						<tr>
+							<td>Cable</td>
+							<td id="cable-td"></td>
+						</tr>
+						<tr>
+							<td>Phone</td>
+							<td id="phone-td"></td>
+						</tr>
+						<tr>
+							<td>Parking</td>
+							<td id="parking-td"></td>
+						</tr>
+						<tr class="danger">
+							<td><b>Total</b></td>
+							<td id="total-cost-td"></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div id="result-partb" class="col-md-8">
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
