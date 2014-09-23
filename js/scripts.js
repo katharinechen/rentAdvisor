@@ -17,7 +17,6 @@ var rentAdvisor = function(totalCost, numberOfRoommates, utilArray) {
   }
 };
 
-
 $(document).ready(function() {
 
   $("form#rent-form").submit(function(event){
@@ -36,7 +35,7 @@ $(document).ready(function() {
 
     $("#rent-form").empty();
     $("#results").show();
-
+    
     $("#total-rent-td").append("$" + totalRent);
     $("#electricity-td").append("$" + electricity);
     $("#internet-td").append("$" + internet);
@@ -44,7 +43,6 @@ $(document).ready(function() {
     $("#phone-td").append("$" + phone);
     $("#parking-td").append("$" + parking);
     $("#total-cost-td").append("$" + totalCost);
-
     $("#results").append("<h3><p>With <b>total rent</b> of <span id='css'>$" + totalCost + "</span>and a total of " + numberOfRoommates + " <b>roommates</b>, you will have to pay <span id='css'>$" + answer + "</span> per month.</p></h3>");
 
     event.preventDefault();
